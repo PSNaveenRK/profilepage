@@ -1,0 +1,1495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Pon Sankara Naveen R K, QA Automation Engineer and aspiring SDET specializing in Selenium, Java, Python, JMeter, Django, and test automation innovation.">
+  <meta name="keywords" content="Pon Sankara Naveen R K, QA Automation Engineer, SDET, Selenium, Java, Python, JMeter, Automation Testing, Chennai">
+  <meta name="author" content="Pon Sankara Naveen R K">
+  <meta property="og:title" content="Pon Sankara Naveen R K | QA Automation Engineer">
+  <meta property="og:description" content="Ambitious QA Automation Engineer with 5+ years of experience in QEA Test Automation, automation framework design, and quality engineering innovation.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./assets/images/profile.jpg">
+  <meta property="og:url" content="https://psnaveenrk.github.io/Resume">
+  <title>Pon Sankara Naveen R K | QA Automation Engineer</title>
+  <link rel="icon" href="./assets/images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #070b13;
+      --bg-2: #0d1220;
+      --panel: rgba(15, 23, 42, 0.72);
+      --panel-strong: rgba(17, 24, 39, 0.92);
+      --line: rgba(148, 163, 184, 0.22);
+      --text: #eef6ff;
+      --muted: #9fb1c7;
+      --blue: #3b82f6;
+      --cyan: #06b6d4;
+      --mint: #34d399;
+      --gold: #f5c542;
+      --rose: #fb7185;
+      --violet: #a78bfa;
+      --shadow: 0 24px 80px rgba(0, 0, 0, 0.38);
+      --radius: 8px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 86px;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      color: var(--text);
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(59, 130, 246, 0.18), transparent 30rem),
+        radial-gradient(circle at 80% 20%, rgba(6, 182, 212, 0.13), transparent 28rem),
+        linear-gradient(135deg, #070b13 0%, #101521 54%, #090d16 100%);
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: -2;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+      background-size: 52px 52px;
+      mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.86), transparent 78%);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .section {
+      padding: 92px 0;
+      position: relative;
+    }
+
+    .section-title {
+      max-width: 760px;
+      margin-bottom: 38px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--cyan);
+      font: 700 0.78rem/1 "JetBrains Mono", monospace;
+      letter-spacing: 0;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 2px;
+      background: linear-gradient(90deg, var(--cyan), var(--gold));
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: "Space Grotesk", "Inter", sans-serif;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      font-size: clamp(2.75rem, 6vw, 5.85rem);
+      line-height: 0.96;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3.25rem);
+      line-height: 1.05;
+      margin: 0;
+    }
+
+    p {
+      color: var(--muted);
+      line-height: 1.72;
+      margin-bottom: 0;
+    }
+
+    .glass {
+      background: linear-gradient(145deg, rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.48));
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+    }
+
+    .navbar {
+      padding: 14px 0;
+      background: rgba(7, 11, 19, 0.74);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+      transition: padding 0.25s ease, background 0.25s ease;
+    }
+
+    .navbar.scrolled {
+      padding: 9px 0;
+      background: rgba(7, 11, 19, 0.91);
+    }
+
+    .navbar-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .brand-mark {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border-radius: 8px;
+      color: white;
+      background: linear-gradient(135deg, var(--blue), var(--cyan));
+      box-shadow: 0 0 28px rgba(59, 130, 246, 0.45);
+      font-family: "JetBrains Mono", monospace;
+    }
+
+    .nav-link {
+      color: rgba(238, 246, 255, 0.72);
+      font-weight: 700;
+      font-size: 0.91rem;
+      padding: 10px 12px !important;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--text);
+    }
+
+    .nav-link.active {
+      position: relative;
+    }
+
+    .nav-link.active::after {
+      content: "";
+      position: absolute;
+      left: 12px;
+      right: 12px;
+      bottom: 5px;
+      height: 2px;
+      background: linear-gradient(90deg, var(--blue), var(--cyan));
+    }
+
+    .navbar-toggler {
+      border: 1px solid var(--line);
+      color: var(--text);
+      border-radius: 8px;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      align-items: center;
+      padding: 116px 0 64px;
+      overflow: hidden;
+    }
+
+    #signalCanvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.5;
+    }
+
+    .hero-copy {
+      position: relative;
+      z-index: 1;
+    }
+
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 13px;
+      border: 1px solid rgba(52, 211, 153, 0.32);
+      border-radius: 999px;
+      background: rgba(16, 185, 129, 0.1);
+      color: #c8ffe5;
+      font: 700 0.84rem/1 "JetBrains Mono", monospace;
+      margin-bottom: 24px;
+    }
+
+    .pulse {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--mint);
+      box-shadow: 0 0 0 rgba(52, 211, 153, 0.58);
+      animation: pulse 1.8s infinite;
+    }
+
+    @keyframes pulse {
+      70% {
+        box-shadow: 0 0 0 12px rgba(52, 211, 153, 0);
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 rgba(52, 211, 153, 0);
+      }
+    }
+
+    .gradient-text {
+      background: linear-gradient(100deg, #ffffff, #a8d8ff 42%, #67e8f9 72%, #fef08a);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .role-line {
+      min-height: 42px;
+      margin: 22px 0 24px;
+      color: #dcecff;
+      font: 700 clamp(1.2rem, 2.4vw, 1.7rem)/1.35 "JetBrains Mono", monospace;
+    }
+
+    .type-target {
+      color: var(--cyan);
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      color: var(--gold);
+      animation: blink 0.9s steps(2, start) infinite;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    .hero-summary {
+      max-width: 760px;
+      color: #c5d5e8;
+      font-size: 1.04rem;
+    }
+
+    .btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    .btn-premium {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 48px;
+      padding: 12px 18px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      font-weight: 800;
+      transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+    }
+
+    .btn-primary-glow {
+      color: #ffffff;
+      background: linear-gradient(135deg, var(--blue), var(--cyan));
+      box-shadow: 0 18px 38px rgba(59, 130, 246, 0.28);
+    }
+
+    .btn-ghost {
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .btn-premium:hover {
+      color: #ffffff;
+      transform: translateY(-2px);
+      border-color: rgba(103, 232, 249, 0.5);
+      box-shadow: 0 20px 46px rgba(6, 182, 212, 0.25);
+    }
+
+    .hero-panel {
+      position: relative;
+      padding: 18px;
+    }
+
+    .profile-frame {
+      position: relative;
+      min-height: 560px;
+      padding: 20px;
+      overflow: hidden;
+    }
+
+    .profile-frame::before {
+      content: "";
+      position: absolute;
+      inset: 12px;
+      border: 1px solid rgba(6, 182, 212, 0.24);
+      border-radius: 8px;
+      pointer-events: none;
+    }
+
+    .profile-photo {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 8px;
+      filter: saturate(1.06) contrast(1.02);
+    }
+
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .metric-card {
+      padding: 14px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.055);
+      border: 1px solid rgba(148, 163, 184, 0.16);
+    }
+
+    .metric-card strong {
+      display: block;
+      color: #ffffff;
+      font-size: 1.35rem;
+      font-family: "Space Grotesk", sans-serif;
+    }
+
+    .metric-card span {
+      color: var(--muted);
+      font-size: 0.83rem;
+    }
+
+    .console-strip {
+      margin-top: 14px;
+      padding: 14px;
+      border-radius: 8px;
+      background: rgba(5, 8, 15, 0.78);
+      border: 1px solid rgba(52, 211, 153, 0.18);
+      color: #9ff7c9;
+      font: 500 0.78rem/1.7 "JetBrains Mono", monospace;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .about-card,
+    .stat-card,
+    .skill-category,
+    .cert-card,
+    .edu-card,
+    .contact-card {
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: rgba(15, 23, 42, 0.64);
+      backdrop-filter: blur(14px);
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .about-card:hover,
+    .stat-card:hover,
+    .skill-category:hover,
+    .cert-card:hover,
+    .edu-card:hover,
+    .contact-card:hover,
+    .timeline-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(6, 182, 212, 0.46);
+      box-shadow: 0 20px 55px rgba(6, 182, 212, 0.12);
+    }
+
+    .about-card {
+      padding: 30px;
+    }
+
+    .focus-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 24px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .focus-list li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      color: #d7e6f7;
+    }
+
+    .focus-list i {
+      color: var(--cyan);
+      margin-top: 5px;
+    }
+
+    .stat-stack {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .stat-card {
+      min-height: 146px;
+      padding: 22px;
+    }
+
+    .stat-card strong {
+      display: block;
+      font-size: 2.05rem;
+      color: white;
+      font-family: "Space Grotesk", sans-serif;
+    }
+
+    .stat-card span {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .timeline {
+      position: relative;
+      display: grid;
+      gap: 28px;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      bottom: 10px;
+      left: 50%;
+      width: 2px;
+      background: linear-gradient(var(--blue), var(--cyan), var(--gold));
+      opacity: 0.52;
+    }
+
+    .timeline-item {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 56px;
+      align-items: center;
+    }
+
+    .timeline-item:nth-child(even) .timeline-card {
+      grid-column: 2;
+    }
+
+    .timeline-item:nth-child(even) .timeline-date {
+      grid-column: 1;
+      grid-row: 1;
+      text-align: right;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: calc(50% - 12px);
+      top: 26px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--bg);
+      border: 4px solid var(--cyan);
+      box-shadow: 0 0 0 8px rgba(6, 182, 212, 0.1);
+      z-index: 1;
+    }
+
+    .timeline-date {
+      color: var(--cyan);
+      font: 700 0.88rem/1.5 "JetBrains Mono", monospace;
+    }
+
+    .timeline-card {
+      padding: 26px;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: rgba(15, 23, 42, 0.72);
+      backdrop-filter: blur(14px);
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .company-line {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .company-icon {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 8px;
+      background: rgba(59, 130, 246, 0.13);
+      color: var(--cyan);
+      border: 1px solid rgba(6, 182, 212, 0.24);
+      flex: 0 0 auto;
+    }
+
+    .timeline-card h3 {
+      font-size: 1.35rem;
+      margin: 0;
+    }
+
+    .timeline-card h4 {
+      color: var(--muted);
+      font: 700 0.95rem/1.5 "Inter", sans-serif;
+      margin: 3px 0 18px;
+    }
+
+    .timeline-card ul {
+      display: grid;
+      gap: 10px;
+      padding-left: 18px;
+      margin: 0;
+      color: #c9d8eb;
+    }
+
+    .award-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 18px;
+    }
+
+    .award-badge,
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border-radius: 999px;
+      padding: 7px 10px;
+      font: 700 0.75rem/1 "JetBrains Mono", monospace;
+    }
+
+    .award-badge {
+      color: #fff7cb;
+      border: 1px solid rgba(245, 197, 66, 0.34);
+      background: rgba(245, 197, 66, 0.1);
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .skill-category {
+      padding: 22px;
+    }
+
+    .skill-category h3 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.05rem;
+      margin-bottom: 16px;
+    }
+
+    .skill-category h3 i {
+      color: var(--cyan);
+    }
+
+    .tag-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .tag {
+      color: #d9f8ff;
+      border: 1px solid rgba(148, 163, 184, 0.18);
+      background: rgba(255, 255, 255, 0.055);
+      transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+    }
+
+    .tag:hover {
+      transform: translateY(-2px);
+      border-color: rgba(6, 182, 212, 0.54);
+      background: rgba(6, 182, 212, 0.12);
+    }
+
+    .rings {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .ring-card {
+      min-height: 168px;
+      padding: 22px;
+      text-align: center;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: rgba(15, 23, 42, 0.64);
+    }
+
+    .ring {
+      --value: 0;
+      width: 92px;
+      height: 92px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 14px;
+      border-radius: 50%;
+      background:
+        radial-gradient(circle closest-side, #101725 72%, transparent 73% 100%),
+        conic-gradient(var(--cyan) calc(var(--value) * 1%), rgba(148, 163, 184, 0.2) 0);
+      font: 800 1.2rem/1 "Space Grotesk", sans-serif;
+      color: white;
+    }
+
+    .ring-card span {
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .cert-grid,
+    .edu-grid,
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .cert-card,
+    .edu-card,
+    .contact-card {
+      padding: 22px;
+    }
+
+    .icon-tile {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      border-radius: 8px;
+      margin-bottom: 18px;
+      color: white;
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.84), rgba(6, 182, 212, 0.78));
+    }
+
+    .cert-card h3,
+    .edu-card h3,
+    .contact-card h3 {
+      font-size: 1.08rem;
+      margin-bottom: 8px;
+    }
+
+    .edu-card .score {
+      display: inline-flex;
+      margin-top: 16px;
+      padding: 7px 10px;
+      border-radius: 999px;
+      color: #fff7cb;
+      background: rgba(245, 197, 66, 0.1);
+      border: 1px solid rgba(245, 197, 66, 0.25);
+      font: 700 0.78rem/1 "JetBrains Mono", monospace;
+    }
+
+    .contact-grid {
+      grid-template-columns: 1.2fr 0.8fr;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 14px;
+      margin: 24px 0;
+    }
+
+    .contact-link {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      padding: 14px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.045);
+      border: 1px solid rgba(148, 163, 184, 0.14);
+      color: #dcecff;
+      transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+    }
+
+    .contact-link:hover {
+      color: white;
+      transform: translateX(4px);
+      background: rgba(6, 182, 212, 0.09);
+      border-color: rgba(6, 182, 212, 0.38);
+    }
+
+    .contact-link i {
+      width: 20px;
+      color: var(--cyan);
+      text-align: center;
+    }
+
+    .availability {
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 24px;
+      background:
+        linear-gradient(135deg, rgba(59, 130, 246, 0.16), transparent 52%),
+        rgba(15, 23, 42, 0.64);
+    }
+
+    .availability strong {
+      color: white;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 1.5rem;
+      line-height: 1.2;
+    }
+
+    footer {
+      padding: 28px 0;
+      color: var(--muted);
+      border-top: 1px solid rgba(148, 163, 184, 0.12);
+      background: rgba(7, 11, 19, 0.68);
+    }
+
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .socials {
+      display: flex;
+      gap: 10px;
+    }
+
+    .socials a {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      border-radius: 8px;
+      color: var(--text);
+      border: 1px solid rgba(148, 163, 184, 0.18);
+      background: rgba(255, 255, 255, 0.05);
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .socials a:hover {
+      transform: translateY(-2px);
+      border-color: rgba(6, 182, 212, 0.5);
+    }
+
+    .back-to-top {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      z-index: 10;
+      border-radius: 8px;
+      color: white;
+      background: linear-gradient(135deg, var(--blue), var(--cyan));
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(8px);
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .back-to-top.show {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 1199px) {
+      .skills-grid,
+      .cert-grid,
+      .edu-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .rings {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 991px) {
+      .hero {
+        padding-top: 108px;
+      }
+
+      .profile-frame {
+        min-height: auto;
+        margin-top: 28px;
+      }
+
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .timeline::before {
+        left: 12px;
+      }
+
+      .timeline-item,
+      .timeline-item:nth-child(even) {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding-left: 42px;
+      }
+
+      .timeline-item:nth-child(even) .timeline-card,
+      .timeline-item:nth-child(even) .timeline-date,
+      .timeline-card,
+      .timeline-date {
+        grid-column: 1;
+        grid-row: auto;
+        text-align: left;
+      }
+
+      .timeline-dot {
+        left: 0;
+      }
+
+      .nav-link.active::after {
+        display: none;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .section {
+        padding: 72px 0;
+      }
+
+      .hero {
+        min-height: auto;
+        padding-bottom: 44px;
+      }
+
+      .hero-summary {
+        font-size: 0.98rem;
+      }
+
+      .btn-row,
+      .btn-premium {
+        width: 100%;
+      }
+
+      .metric-grid,
+      .stat-stack,
+      .skills-grid,
+      .cert-grid,
+      .edu-grid,
+      .rings {
+        grid-template-columns: 1fr;
+      }
+
+      .profile-photo {
+        height: 310px;
+      }
+
+      .about-card,
+      .timeline-card,
+      .skill-category,
+      .cert-card,
+      .edu-card,
+      .contact-card {
+        padding: 20px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="96" tabindex="0">
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#home" aria-label="Pon Sankara Naveen R K home">
+        <span class="brand-mark">PSN</span>
+        <span>Pon Sankara Naveen</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero section" id="home">
+      <canvas id="signalCanvas" aria-hidden="true"></canvas>
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <div class="hero-copy" data-aos="fade-up">
+              <div class="status-pill"><span class="pulse"></span>Currently at Fiserv - Open to SDET Opportunities</div>
+              <h1>Pon Sankara <span class="gradient-text">Naveen R K</span></h1>
+              <div class="role-line">
+                <span id="typeTarget" class="type-target"></span><span class="cursor">|</span>
+              </div>
+              <p class="hero-summary">
+                Ambitious QA Automation Engineer with 5+ years of experience in QEA Test Automation, skilled in test planning, automation framework design, and executing both manual and automated test scripts. Passionate about crafting innovative solutions, focused on evolving into an SDET while continuously adapting to new technologies. Dedicated to delivering exceptional quality through the optimization of test efficiency and the advancement of automation excellence.
+              </p>
+              <div class="btn-row">
+                <a class="btn-premium btn-primary-glow" href="./PonSankaraNaveen_Resume.pdf" download>
+                  <i class="fa-solid fa-file-arrow-down"></i>
+                  Download Resume
+                </a>
+                <a class="btn-premium btn-ghost" href="#contact">
+                  <i class="fa-solid fa-paper-plane"></i>
+                  Get In Touch
+                </a>
+                <a class="btn-premium btn-ghost" href="https://github.com/psnaveenrk" target="_blank" rel="noreferrer">
+                  <i class="fa-brands fa-github"></i>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <aside class="hero-panel glass" data-aos="fade-left" data-aos-delay="120" aria-label="Profile highlights">
+              <div class="profile-frame">
+                <img class="profile-photo" src="./assets/images/profile.jpg" alt="Pon Sankara Naveen R K">
+                <div class="metric-grid">
+                  <div class="metric-card">
+                    <strong>5+</strong>
+                    <span>Years in QEA automation</span>
+                  </div>
+                  <div class="metric-card">
+                    <strong>400+</strong>
+                    <span>Hours saved annually</span>
+                  </div>
+                  <div class="metric-card">
+                    <strong>80%</strong>
+                    <span>Data request effort reduction</span>
+                  </div>
+                  <div class="metric-card">
+                    <strong>28</strong>
+                    <span>Potential defects prevented</span>
+                  </div>
+                </div>
+                <div class="console-strip">
+                  qa.pipeline &gt; validate_payment_flow()<br>
+                  automation.coverage &gt; regression + e2e + api + wcag<br>
+                  innovation.mode &gt; enabled
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <span class="eyebrow">About</span>
+          <h2>Quality engineering with a builder's mindset.</h2>
+        </div>
+        <div class="about-grid">
+          <article class="about-card" data-aos="fade-up">
+            <p>
+              I work at the intersection of test automation, release confidence, and practical innovation. My strongest work has been around turning repeated QA effort into reliable tools: Selenium and Java suites, JMeter regression coverage, Python and Django workflow automation, Excel VBA accelerators, and dashboards that help teams see quality clearly.
+            </p>
+            <ul class="focus-list">
+              <li><i class="fa-solid fa-circle-check"></i><span>Designing automation that supports faster releases without hiding quality risks.</span></li>
+              <li><i class="fa-solid fa-circle-check"></i><span>Connecting front-end, back-end, API, accessibility, and cloud validation into useful test coverage.</span></li>
+              <li><i class="fa-solid fa-circle-check"></i><span>Building internal tools that remove repetitive work and create measurable delivery impact.</span></li>
+            </ul>
+          </article>
+          <div class="stat-stack" data-aos="fade-up" data-aos-delay="100">
+            <div class="stat-card">
+              <strong>2</strong>
+              <span>Companies: Fiserv and Cognizant</span>
+            </div>
+            <div class="stat-card">
+              <strong>4</strong>
+              <span>Professional certifications</span>
+            </div>
+            <div class="stat-card">
+              <strong>48h</strong>
+              <span>Testing effort saved per release</span>
+            </div>
+            <div class="stat-card">
+              <strong>AZ-900</strong>
+              <span>Azure Fundamentals certified</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <span class="eyebrow">Experience</span>
+          <h2>Automation work shaped by real release pressure.</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item" data-aos="fade-up">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <div class="company-line">
+                <div class="company-icon"><i class="fa-solid fa-credit-card"></i></div>
+                <div>
+                  <h3>Fiserv, Inc.</h3>
+                  <h4>Automation Engineer, Merchant Solutions - Certification</h4>
+                </div>
+              </div>
+              <ul>
+                <li>Onboarded into Cards &amp; Payments transaction flows and contributed to front-end log validation automation using Selenium, Java, Cucumber, and JUnit.</li>
+                <li>Enhanced and maintained JMeter regression scripts for Commerce Hub, supporting stable e-commerce payment flow validation.</li>
+                <li>Co-developed a standalone CR BO automation solution for Mainframe back-office workflows using Python, Django, BlueZone, Celery, and RabbitMQ.</li>
+                <li>Conceptualized and built a front-end log viewer to segregate archived test logs and traces by corresponding RRN, reducing daily manual validation effort.</li>
+              </ul>
+            </div>
+            <div class="timeline-date">Jun 2025 - Present</div>
+          </div>
+
+          <div class="timeline-item" data-aos="fade-up">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <div class="company-line">
+                <div class="company-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <div>
+                  <h3>Cognizant Technology Solutions</h3>
+                  <h4>Automation Engineer, HC CSR Application</h4>
+                </div>
+              </div>
+              <ul>
+                <li>Created, engineered, and executed Selenium and Java automated scripts for web applications to support defect-free delivery.</li>
+                <li>Owned system, regression, end-to-end, WCAG, and API testing across manual and automated execution paths.</li>
+                <li>Developed integrated test scripts by combining presentation layer scripts with backend testing tools.</li>
+                <li>Collaborated with Dev, PO, BA, Scrum, Backend, Infra, and DB teams to validate complete requirement fulfillment.</li>
+              </ul>
+              <div class="award-row">
+                <span class="award-badge"><i class="fa-solid fa-trophy"></i>Innovative Champ Award</span>
+                <span class="award-badge"><i class="fa-solid fa-chart-line"></i>400+ hours saved</span>
+                <span class="award-badge"><i class="fa-solid fa-shield-halved"></i>28 defects prevented</span>
+              </div>
+            </div>
+            <div class="timeline-date">Dec 2020 - Jun 2025</div>
+          </div>
+
+          <div class="timeline-item" data-aos="fade-up">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <div class="company-line">
+                <div class="company-icon"><i class="fa-solid fa-cloud"></i></div>
+                <div>
+                  <h3>Cognizant Technology Solutions</h3>
+                  <h4>Test Analyst, Cloud Migration Project</h4>
+                </div>
+              </div>
+              <ul>
+                <li>Validated migration of Provider and Payer web applications from on-prem to Azure through functional and integration testing.</li>
+                <li>Identified and resolved cloud-specific issues around WAF, FTP stability, timestamps, and security to protect on-time sign-off.</li>
+                <li>Built VBA automation tools for data setup, VPN and VM login, application access, screenshot capture, and smoke test validation.</li>
+                <li>Developed Selenium-VBA smoke scripts to validate applications after Azure patch deployments, reducing manual effort and cycle time.</li>
+              </ul>
+              <div class="award-row">
+                <span class="award-badge"><i class="fa-solid fa-medal"></i>Rising Star - Silver</span>
+                <span class="award-badge"><i class="fa-brands fa-microsoft"></i>AZ-900 certified</span>
+              </div>
+            </div>
+            <div class="timeline-date">Within Dec 2020 - Jun 2025</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <span class="eyebrow">Skills</span>
+          <h2>Tooling across automation, cloud, data, and delivery.</h2>
+        </div>
+
+        <div class="rings" data-aos="fade-up">
+          <div class="ring-card">
+            <div class="ring" data-value="92">0%</div>
+            <span>Test Automation</span>
+          </div>
+          <div class="ring-card">
+            <div class="ring" data-value="88">0%</div>
+            <span>Regression Strategy</span>
+          </div>
+          <div class="ring-card">
+            <div class="ring" data-value="84">0%</div>
+            <span>Tool Innovation</span>
+          </div>
+          <div class="ring-card">
+            <div class="ring" data-value="78">0%</div>
+            <span>Cloud Validation</span>
+          </div>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-category" data-aos="fade-up">
+            <h3><i class="fa-solid fa-vial-circle-check"></i>Automation &amp; Testing</h3>
+            <div class="tag-wrap">
+              <span class="tag">Selenium</span><span class="tag">Java</span><span class="tag">TestNG</span><span class="tag">JUnit</span><span class="tag">Cucumber</span><span class="tag">JMeter</span><span class="tag">UFT</span><span class="tag">SOAP UI</span><span class="tag">Postman</span>
+            </div>
+          </article>
+          <article class="skill-category" data-aos="fade-up" data-aos-delay="60">
+            <h3><i class="fa-solid fa-code"></i>Programming &amp; Scripting</h3>
+            <div class="tag-wrap">
+              <span class="tag">Python</span><span class="tag">Java</span><span class="tag">VBScript</span><span class="tag">Excel VBA</span>
+            </div>
+          </article>
+          <article class="skill-category" data-aos="fade-up" data-aos-delay="120">
+            <h3><i class="fa-solid fa-window-restore"></i>Web &amp; Frontend</h3>
+            <div class="tag-wrap">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+            </div>
+          </article>
+          <article class="skill-category" data-aos="fade-up">
+            <h3><i class="fa-solid fa-gears"></i>DevOps &amp; Tools</h3>
+            <div class="tag-wrap">
+              <span class="tag">Git</span><span class="tag">Maven</span><span class="tag">JIRA</span><span class="tag">RTC</span><span class="tag">RQM</span><span class="tag">Django</span><span class="tag">Celery</span><span class="tag">RabbitMQ</span><span class="tag">BlueZone</span>
+            </div>
+          </article>
+          <article class="skill-category" data-aos="fade-up" data-aos-delay="60">
+            <h3><i class="fa-solid fa-database"></i>Databases &amp; Cloud</h3>
+            <div class="tag-wrap">
+              <span class="tag">SQL</span><span class="tag">Azure AZ-900</span><span class="tag">Cloud Computing</span>
+            </div>
+          </article>
+          <article class="skill-category" data-aos="fade-up" data-aos-delay="120">
+            <h3><i class="fa-solid fa-people-arrows"></i>Methodologies</h3>
+            <div class="tag-wrap">
+              <span class="tag">Agile</span><span class="tag">Lean Six Sigma</span><span class="tag">WCAG Testing</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="certifications">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <span class="eyebrow">Certifications</span>
+          <h2>Credentials that support hands-on automation work.</h2>
+        </div>
+        <div class="cert-grid">
+          <article class="cert-card" data-aos="fade-up">
+            <div class="icon-tile"><i class="fa-solid fa-robot"></i></div>
+            <h3>Selenium WebDriver with Java</h3>
+            <p>Automation testing credential focused on browser automation and Java-based test design.</p>
+          </article>
+          <article class="cert-card" data-aos="fade-up" data-aos-delay="60">
+            <div class="icon-tile"><i class="fa-brands fa-microsoft"></i></div>
+            <h3>Azure Fundamentals (AZ-900)</h3>
+            <p>Microsoft cloud fundamentals covering Azure services, governance, and core cloud concepts.</p>
+          </article>
+          <article class="cert-card" data-aos="fade-up" data-aos-delay="120">
+            <div class="icon-tile"><i class="fa-solid fa-laptop-code"></i></div>
+            <h3>Web Development Bootcamp 2022</h3>
+            <p>Full-stack web development foundations with practical HTML, CSS, JavaScript, and web app concepts.</p>
+          </article>
+          <article class="cert-card" data-aos="fade-up" data-aos-delay="180">
+            <div class="icon-tile"><i class="fa-solid fa-chart-simple"></i></div>
+            <h3>Lean Six Sigma Green Belt</h3>
+            <p>Process improvement certification focused on reducing waste, variation, and repeated effort.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <span class="eyebrow">Education</span>
+          <h2>Academic path from engineering to business management.</h2>
+        </div>
+        <div class="edu-grid">
+          <article class="edu-card" data-aos="fade-up">
+            <div class="icon-tile"><i class="fa-solid fa-user-graduate"></i></div>
+            <h3>MBA</h3>
+            <p>Indira Gandhi National Open University (IGNOU)</p>
+            <span class="score">2025 - Pursuing</span>
+          </article>
+          <article class="edu-card" data-aos="fade-up" data-aos-delay="60">
+            <div class="icon-tile"><i class="fa-solid fa-gear"></i></div>
+            <h3>B.E. Mechanical Engineering</h3>
+            <p>K.L.N. College of Engineering</p>
+            <span class="score">2020 - 81%</span>
+          </article>
+          <article class="edu-card" data-aos="fade-up" data-aos-delay="120">
+            <div class="icon-tile"><i class="fa-solid fa-school"></i></div>
+            <h3>H.S.C</h3>
+            <p>MEPCO Schlenk Mat. Hr. Sec. School</p>
+            <span class="score">2016 - 86%</span>
+          </article>
+          <article class="edu-card" data-aos="fade-up" data-aos-delay="180">
+            <div class="icon-tile"><i class="fa-solid fa-book-open-reader"></i></div>
+            <h3>S.S.L.C</h3>
+            <p>MEPCO Schlenk Mat. Hr. Sec. School</p>
+            <span class="score">2014 - 96%</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <span class="eyebrow">Contact</span>
+          <h2>Let's talk quality, automation, and SDET opportunities.</h2>
+        </div>
+        <div class="contact-grid">
+          <article class="contact-card" data-aos="fade-up">
+            <h3>Reach me directly</h3>
+            <p>Based in Kelambakkam, Chennai, Tamil Nadu, India. Available for roles and conversations around QA automation, SDET growth, and automation-first delivery.</p>
+            <div class="contact-list">
+              <a class="contact-link" href="mailto:ponsankaranaveen@gmail.com"><i class="fa-solid fa-envelope"></i><span>ponsankaranaveen@gmail.com</span></a>
+              <a class="contact-link" href="tel:+919894104228"><i class="fa-solid fa-phone"></i><span>+91 9894104228</span></a>
+              <a class="contact-link" href="https://github.com/psnaveenrk" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i><span>github.com/psnaveenrk</span></a>
+              <a class="contact-link" href="https://in.linkedin.com/in/pon-sankara-naveen-r-k-17a478191" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i><span>LinkedIn Profile</span></a>
+            </div>
+            <div class="btn-row">
+              <a class="btn-premium btn-primary-glow" href="mailto:ponsankaranaveen@gmail.com"><i class="fa-solid fa-paper-plane"></i>Hire Me</a>
+              <a class="btn-premium btn-ghost" href="./PonSankaraNaveen_Resume.pdf" target="_blank"><i class="fa-solid fa-eye"></i>View Resume</a>
+            </div>
+          </article>
+          <aside class="contact-card availability" data-aos="fade-left">
+            <div>
+              <div class="status-pill"><span class="pulse"></span>Open to SDET Opportunities</div>
+              <strong>Current portfolio:</strong>
+              <p><a href="https://psnaveenrk.github.io/Resume" target="_blank" rel="noreferrer">psnaveenrk.github.io/Resume</a></p>
+            </div>
+            <div class="console-strip">
+              response.time &gt; fast<br>
+              preferred.stack &gt; Selenium + Java + Python<br>
+              next.goal &gt; SDET impact
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <div>
+        <strong>Pon Sankara Naveen R K</strong>
+        <span> &copy; 2025. Built for GitHub Pages.</span>
+      </div>
+      <div class="socials" aria-label="Social links">
+        <a href="mailto:ponsankaranaveen@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="tel:+919894104228" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+        <a href="https://github.com/psnaveenrk" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://in.linkedin.com/in/pon-sankara-naveen-r-k-17a478191" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    const nav = document.querySelector(".navbar");
+    const backToTop = document.querySelector("#backToTop");
+
+    AOS.init({
+      duration: 760,
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 90
+    });
+
+    window.addEventListener("scroll", () => {
+      const isScrolled = window.scrollY > 24;
+      nav.classList.toggle("scrolled", isScrolled);
+      backToTop.classList.toggle("show", window.scrollY > 520);
+    });
+
+    document.querySelectorAll(".navbar-nav .nav-link").forEach((link) => {
+      link.addEventListener("click", () => {
+        const menu = document.querySelector("#navMenu");
+        const collapse = bootstrap.Collapse.getInstance(menu);
+        if (collapse) collapse.hide();
+      });
+    });
+
+    const roles = [
+      "QA Automation Engineer",
+      "Aspiring SDET",
+      "Test Automation Expert",
+      "Innovation Award Winner"
+    ];
+    const typeTarget = document.querySelector("#typeTarget");
+    let roleIndex = 0;
+    let charIndex = 0;
+    let deleting = false;
+
+    function typeLoop() {
+      const current = roles[roleIndex];
+      typeTarget.textContent = current.slice(0, charIndex);
+
+      if (!deleting && charIndex < current.length) {
+        charIndex += 1;
+        setTimeout(typeLoop, 70);
+        return;
+      }
+
+      if (!deleting && charIndex === current.length) {
+        deleting = true;
+        setTimeout(typeLoop, 1300);
+        return;
+      }
+
+      if (deleting && charIndex > 0) {
+        charIndex -= 1;
+        setTimeout(typeLoop, 36);
+        return;
+      }
+
+      deleting = false;
+      roleIndex = (roleIndex + 1) % roles.length;
+      setTimeout(typeLoop, 240);
+    }
+
+    typeLoop();
+
+    const ringObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const ring = entry.target;
+        const target = Number(ring.dataset.value);
+        let value = 0;
+        const timer = setInterval(() => {
+          value += 2;
+          if (value >= target) {
+            value = target;
+            clearInterval(timer);
+          }
+          ring.style.setProperty("--value", value);
+          ring.textContent = value + "%";
+        }, 18);
+        observer.unobserve(ring);
+      });
+    }, { threshold: 0.55 });
+
+    document.querySelectorAll(".ring").forEach((ring) => ringObserver.observe(ring));
+
+    const canvas = document.querySelector("#signalCanvas");
+    const ctx = canvas.getContext("2d");
+    let points = [];
+
+    function resizeCanvas() {
+      const ratio = window.devicePixelRatio || 1;
+      canvas.width = window.innerWidth * ratio;
+      canvas.height = window.innerHeight * ratio;
+      canvas.style.width = window.innerWidth + "px";
+      canvas.style.height = window.innerHeight + "px";
+      ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+      const count = Math.min(80, Math.floor(window.innerWidth / 18));
+      points = Array.from({ length: count }, () => ({
+        x: Math.random() * window.innerWidth,
+        y: Math.random() * window.innerHeight,
+        vx: (Math.random() - 0.5) * 0.35,
+        vy: (Math.random() - 0.5) * 0.35,
+        r: Math.random() * 1.8 + 0.7
+      }));
+    }
+
+    function drawSignals() {
+      ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+      points.forEach((point, i) => {
+        point.x += point.vx;
+        point.y += point.vy;
+        if (point.x < 0 || point.x > window.innerWidth) point.vx *= -1;
+        if (point.y < 0 || point.y > window.innerHeight) point.vy *= -1;
+
+        ctx.beginPath();
+        ctx.arc(point.x, point.y, point.r, 0, Math.PI * 2);
+        ctx.fillStyle = "rgba(103, 232, 249, 0.65)";
+        ctx.fill();
+
+        for (let j = i + 1; j < points.length; j += 1) {
+          const other = points[j];
+          const dx = point.x - other.x;
+          const dy = point.y - other.y;
+          const distance = Math.sqrt(dx * dx + dy * dy);
+          if (distance < 130) {
+            ctx.beginPath();
+            ctx.moveTo(point.x, point.y);
+            ctx.lineTo(other.x, other.y);
+            ctx.strokeStyle = "rgba(59, 130, 246, " + (1 - distance / 130) * 0.18 + ")";
+            ctx.lineWidth = 1;
+            ctx.stroke();
+          }
+        }
+      });
+      requestAnimationFrame(drawSignals);
+    }
+
+    resizeCanvas();
+    drawSignals();
+    window.addEventListener("resize", resizeCanvas);
+  </script>
+</body>
+</html>
