@@ -178,30 +178,35 @@
       font-family: "JetBrains Mono", monospace;
     }
 
-    .nav-link {
-      color: rgba(238, 246, 255, 0.72);
+    .navbar .navbar-nav .nav-link {
+      color: rgba(238, 246, 255, 0.76) !important;
       font-weight: 700;
       font-size: 0.91rem;
       padding: 10px 12px !important;
+      transition: color 0.2s ease, text-shadow 0.2s ease;
     }
 
-    .nav-link:hover,
-    .nav-link.active {
-      color: var(--text);
+    .navbar .navbar-nav .nav-link:hover,
+    .navbar .navbar-nav .nav-link:focus,
+    .navbar .navbar-nav .nav-link.active,
+    .navbar .navbar-nav .nav-link.show {
+      color: #ffffff !important;
+      text-shadow: 0 0 14px rgba(255, 255, 255, 0.45);
     }
 
-    .nav-link.active {
+    .navbar .navbar-nav .nav-link.active {
       position: relative;
     }
 
-    .nav-link.active::after {
+    .navbar .navbar-nav .nav-link.active::after {
       content: "";
       position: absolute;
       left: 12px;
       right: 12px;
       bottom: 5px;
       height: 2px;
-      background: linear-gradient(90deg, var(--blue), var(--cyan));
+      background: linear-gradient(90deg, #ffffff, var(--cyan));
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.42);
     }
 
     .navbar-toggler {
@@ -955,10 +960,6 @@
 <body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="96" tabindex="0">
   <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="#home" aria-label="Pon Sankara Naveen R K home">
-        <span class="brand-mark">PSN</span>
-        <span>Pon Sankara Naveen</span>
-      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fa-solid fa-bars"></i>
       </button>
@@ -1010,7 +1011,7 @@
           <div class="col-lg-5">
             <aside class="hero-panel glass" data-aos="fade-left" data-aos-delay="120" aria-label="Profile highlights">
               <div class="profile-frame">
-                <img class="profile-photo" src="./assets/images/profile.jpg" alt="Pon Sankara Naveen R K">
+                <img class="profile-photo" src="./assets/images/profile.png" alt="Pon Sankara Naveen R K">
                 <div class="metric-grid">
                   <div class="metric-card">
                     <strong>5+</strong>
@@ -1019,14 +1020,6 @@
                   <div class="metric-card">
                     <strong>400+</strong>
                     <span>Hours saved annually</span>
-                  </div>
-                  <div class="metric-card">
-                    <strong>80%</strong>
-                    <span>Data request effort reduction</span>
-                  </div>
-                  <div class="metric-card">
-                    <strong>28</strong>
-                    <span>Potential defects prevented</span>
                   </div>
                 </div>
                 <div class="console-strip">
@@ -1268,7 +1261,7 @@
             <div class="icon-tile"><i class="fa-solid fa-user-graduate"></i></div>
             <h3>MBA</h3>
             <p>Indira Gandhi National Open University (IGNOU)</p>
-            <span class="score">2025 - Pursuing</span>
+            <span class="score">2021 - Completed</span>
           </article>
           <article class="edu-card" data-aos="fade-up" data-aos-delay="60">
             <div class="icon-tile"><i class="fa-solid fa-gear"></i></div>
@@ -1334,7 +1327,7 @@
     <div class="container footer-row">
       <div>
         <strong>Pon Sankara Naveen R K</strong>
-        <span> &copy; 2025. Built for GitHub Pages.</span>
+        <span> &copy; 2025.</span>
       </div>
       <div class="socials" aria-label="Social links">
         <a href="mailto:ponsankaranaveen@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
